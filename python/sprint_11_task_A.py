@@ -1,3 +1,4 @@
+# ID 68467335
 from typing import List, Tuple
 
 
@@ -25,5 +26,10 @@ def read_input() -> Tuple[int, List[int]]:
     return street_length, number_list
 
 
-street_length, number_list = read_input()
-print(*(length_caliculate(street_length, number_list)))
+def main():
+    street_length, number_list = read_input()
+    print(*(length_caliculate(street_length, number_list)))
+
+
+if __name__ == '__main__':
+    main()
